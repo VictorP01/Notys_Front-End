@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "./styles/custom_colors.scss";
+
+$custom_colors: (
+  "custom-purple": (
+    $custom-purple,
+  ),
+  "custom-purple-darker": (
+    $custom-purple-darker,
+  ),
+);
+
+// Import Bulma styles
+@import "~bulma/bulma";
+
+// Import rbx style fixes
+@import "~rbx/rbx";
