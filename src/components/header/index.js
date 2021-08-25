@@ -8,7 +8,7 @@ const Header = () => {
     <Navbar>
       <Container>
         <Navbar.Brand>
-          <img src={logoImage} />
+          <img src={logoImage} alt="Logo" />
           <Navbar.Burger
             className="navbar-burger burger"
             aria-label="menu"
