@@ -4,9 +4,3 @@
   background-color: $custom-purple;
   height: calc(100% - 70px);
 }
-
-@media (max-width: 769px) {
-  div.column.is-6.is-offset-1 {
-    display: none;
-  }
-}
