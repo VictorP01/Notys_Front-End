@@ -12,7 +12,7 @@ const HomeScreen = () => {
       <Section size={undefined} className="home">
         <Container>
           <Column.Group>
-            <Column size={5}>
+            <Column size={5} className="column-style">
               <Title size={2} spaced className="has-text-white">
                 Create notes easily and access when you wants on the cloud
               </Title>
@@ -32,7 +32,7 @@ const HomeScreen = () => {
                 <strong>Register for free Now</strong>
               </Link>
             </Column>
-            <Column size={6} offset={1}>
+            <Column size={6} offset={1} className="column-style">
               <img src={presentationImage} alt="Img app" />
             </Column>
           </Column.Group>

@@ -9,15 +9,15 @@ const LoginScreen = () => {
   return (
     <Fragment>
       <Header />
-      <Section size="medium" className="auth">
+      <Section className="auth login">
         <Container>
           <Column.Group centered>
-            <Column size={3}>
+            <Column size={3} className="column-style">
               <Card>
                 <Card.Content>
-                  <Section>
+                  <Container>
                     <Column.Group centered>
-                      <Column size={12}>
+                      <Column size={6}>
                         <img src={logoImage} alt="logo" />
                       </Column>
                     </Column.Group>
@@ -32,7 +32,7 @@ const LoginScreen = () => {
                         </Title>
                       </Column>
                     </Column.Group>
-                  </Section>
+                  </Container>
                   <LoginForm />
                 </Card.Content>
               </Card>

@@ -1,5 +1,26 @@
 @import "./custom_colors";
 
+.section {
+  padding: auto;
+}
+
 .auth {
   background-color: $custom-purple;
+}
+
+.login {
+  padding-top: 100px;
+}
+
+.form-register {
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+}
+
+.column-style {
+  padding: 0;
 }

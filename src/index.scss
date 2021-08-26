@@ -1,0 +1,14 @@
+@import "./styles/custom_colors";
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: $custom-purple;
+  height: 100vh;
+}

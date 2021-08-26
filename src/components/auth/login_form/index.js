@@ -25,7 +25,7 @@ const LoginForm = () => {
   return (
     <Fragment>
       <Column.Group centered>
-        <form>
+        <form className="form-register">
           <Column size={12}>
             <Field>
               <Label size="small">Email:</Label>
@@ -54,7 +54,7 @@ const LoginForm = () => {
             <Field>
               <Control>
                 <Column.Group>
-                  <Column>
+                  <Column className="btn">
                     <a
                       onClick={(e) => setRedirectToRegister(true)}
                       className="button is-white has-text-custom-purple"
@@ -62,7 +62,7 @@ const LoginForm = () => {
                       Register or
                     </a>
                   </Column>
-                  <Column>
+                  <Column className="btn">
                     <Button color="custom-purple" outlined>
                       Login
                     </Button>

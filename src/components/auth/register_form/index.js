@@ -11,6 +11,7 @@ import {
 } from "rbx";
 import { Redirect } from "react-router-dom";
 import UserService from "../../../services/users";
+import "../../../styles/auth.scss";
 
 const RegisterForm = () => {
   const [name, setName] = useState("");
@@ -38,7 +39,7 @@ const RegisterForm = () => {
   return (
     <Fragment>
       <Column.Group centered>
-        <form onSubmit={HandleSubmit}>
+        <form onSubmit={HandleSubmit} className="form-register">
           <Column size={12}>
             <Field>
               <Label size="small">Name:</Label>
@@ -78,8 +79,8 @@ const RegisterForm = () => {
             </Field>
             <Field>
               <Control>
-                <Column.Group breakpoint="mobile">
-                  <Column>
+                <Column.Group centered>
+                  <Column className="btn" size={6}>
                     <a
                       className="button is-white has-text-custom-purple"
                       onClick={(e) => setRedirectToLogin(true)}
@@ -87,7 +88,7 @@ const RegisterForm = () => {
                       Login or
                     </a>
                   </Column>
-                  <Column>
+                  <Column className="btn">
                     <Button color="custom-purple" outlined>
                       Register
                     </Button>
