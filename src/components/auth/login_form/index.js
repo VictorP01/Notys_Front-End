@@ -10,6 +10,7 @@ import {
   Label,
 } from "rbx";
 import { Redirect } from "react-router-dom";
+import UserService from "../../../services/users";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -18,14 +19,27 @@ const LoginForm = () => {
   const [RedirectToNotes, setRedirectToNotes] = useState(false);
   const [error, setError] = useState(false);
 
-  if (RedirectToRegister == true)
+  const HandleSubmit = async (evt) => {
+    evt.preventDefault();
+    try {
+      const user = await UserService.login({
+        email: email,
+        password: password,
+      });
+      setRedirectToNotes(true);
+    } catch (error) {
+      setError(true);
+    }
+  };
+
+  if (RedirectToRegister === true)
     return <Redirect to={{ pathname: "/register" }} />;
-  else if (RedirectToNotes == true)
+  else if (RedirectToNotes === true)
     return <Redirect to={{ pathname: "/notes" }} />;
   return (
     <Fragment>
       <Column.Group centered>
-        <form className="form-register">
+        <form onSubmit={HandleSubmit} className="form-register">
           <Column size={12}>
             <Field>
               <Label size="small">Email:</Label>
