@@ -96,7 +96,7 @@ const RegisterForm = () => {
                 </Column.Group>
               </Control>
             </Field>
-            {error && <Help color="danger">Email or Senha invalid</Help>}
+            {error && <Help color="danger">Email or Password invalid</Help>}
           </Column>
         </form>
       </Column.Group>

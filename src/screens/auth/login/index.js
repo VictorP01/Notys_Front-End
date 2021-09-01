@@ -12,12 +12,12 @@ const LoginScreen = () => {
       <Section className="auth login">
         <Container>
           <Column.Group centered>
-            <Column size={3} className="column-style">
+            <Column size={4} className="column-style">
               <Card>
                 <Card.Content>
                   <Container>
                     <Column.Group centered>
-                      <Column size={6}>
+                      <Column size={8}>
                         <img src={logoImage} alt="logo" />
                       </Column>
                     </Column.Group>

@@ -1,6 +1,6 @@
 @charset 'utf-8';
 @import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "./styles/custom_colors";
+@import "./styles/_custom_colors.scss";
 
 $custom_colors: (
   "custom-purple": (
@@ -10,7 +10,6 @@ $custom_colors: (
     $custom-purple-darker,
   ),
 );
-
 // Import Bulma styles
 @import "~bulma/bulma";
 

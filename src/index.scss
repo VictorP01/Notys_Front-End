@@ -9,6 +9,11 @@ body,
 }
 
 body {
-  background-color: $custom-purple;
   height: 100vh;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }

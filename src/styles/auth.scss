@@ -1,15 +1,12 @@
 @import "./custom_colors";
 
-.section {
-  padding: auto;
-}
-
 .auth {
   background-color: $custom-purple;
+  height: calc(100% - 70px);
 }
 
-.login {
-  padding-top: 100px;
+.column.is-6 {
+  text-align: center;
 }
 
 .form-register {
